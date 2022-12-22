@@ -1,11 +1,7 @@
 import './formulario.css'
-import React, { useState } from "react";
-import axios from "axios"
-
-
+import { useState } from "react";
 
 const Formulario = () => {
-
 
     const [login2, setLogin] = useState('')
     const [senha2, setSenha] = useState('')
@@ -16,41 +12,25 @@ const Formulario = () => {
     const [palavraCha2, setPalavraCha] = useState('')
     const [arquivo, setArquivo] = useState()
 
+    let lista:any = []
+    const [items, setItems] = useState(lista)
 
-    let nome: string;
-    let senha: string;
-    let email: string;
-    let telefone: string;
-    let escola: string;
-    let remoendacao: string;
-    let palavraCha: string;
-    let arqui:any
-
-    function log(){
-        console.log(nome);
-        console.log(senha);
-        console.log(telefone);
-        console.log(escola);
-        console.log(remoendacao);
-        console.log(palavraCha);
-        console.log(arqui);
-        
-        
-    }
+   
     function salvar() {
-        return (
-            nome = login2,
-            senha = senha2,
-            email = email2,
-            telefone = telefone2,
-            escola = escola2,
-            remoendacao = recomendacao2,
-            palavraCha = palavraCha2,
-            arqui=arquivo
-        )
+        items.push({
+            nome:login2,
+            senha :senha2,
+            email :email2,
+            telefone :telefone2,
+            escola :escola2,
+            remoendacao :recomendacao2,
+            palavraCha :palavraCha2,
+            arqui :arquivo
+        })
     }
-
-
+    function log() {
+        console.log(items);
+    }
 
     return (
         <>
@@ -63,15 +43,15 @@ const Formulario = () => {
                             <span>Nome</span>
                         </div>
                         <div className="inputBox w50">
-                            <input type="password" required onChange={(e) => setSenha(e.target.value)}/>
+                            <input type="password" required onChange={(e) => setSenha(e.target.value)} />
                             <span>Senha</span>
                         </div>
                         <div className="inputBox w50">
-                            <input type="email" required onChange={(e) => setEmail(e.target.value)}/>
+                            <input type="email" required onChange={(e) => setEmail(e.target.value)} />
                             <span>Email</span>
                         </div>
                         <div className="inputBox w50">
-                            <input type="text" required onChange={(e) => setTelefone(e.target.value)}/>
+                            <input type="text" required onChange={(e) => setTelefone(e.target.value)} />
                             <span>Telefone</span>
                         </div>
                         <div className="inputBox w50">
@@ -83,19 +63,19 @@ const Formulario = () => {
                                 <option value="Ensino Médio incompleto">Ensino Médio completo</option>
                                 <option value="Ensino Superior incompleto">Ensino Superior incompleto</option>
                                 <option value="Ensino Superior completo">Ensino Superior completo</option>
-                                
+
                             </select>
                         </div>
                         <div className="inputBox w50">
-                            <input type="text" required onChange={(e) => setRecomendacao(e.target.value)}/>
+                            <input type="text" required onChange={(e) => setRecomendacao(e.target.value)} />
                             <span>Recomendações</span>
                         </div>
                         <div className="inputBox w50">
-                            <input type="text" required onChange={(e) => setPalavraCha(e.target.value)}/>
+                            <input type="text" required onChange={(e) => setPalavraCha(e.target.value)} />
                             <span>Palavra Chave</span>
                         </div>
                         <div className="inputBox w50">
-                            <input type="file" required onChange={(e) => setArquivo(e.target.value)}/>
+                            <input type="file" required onChange={(e) => setArquivo(e.target.value)} />
                         </div>
                     </div>
                     <div className="inputBox w100" >

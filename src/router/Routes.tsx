@@ -6,7 +6,7 @@ export default function Routes(){
     <BrowserRouter>
     <WrapperRoutes>
         <Route path="/" element={<PagCadastrar/>} />
-        <Route path="/contato" element={<PagCurriculo/>} />
+        <Route path="/curriculo" element={<PagCurriculo/>} />
     </WrapperRoutes>
     </BrowserRouter>
     )
