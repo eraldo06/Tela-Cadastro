@@ -1,4 +1,4 @@
-const nota = [
+const api = [
     {
         "empresa":"facebook",
         "vaga":"estagio",
@@ -64,4 +64,4 @@ const nota = [
     }
 ]
 
-export default nota;
+export default api;

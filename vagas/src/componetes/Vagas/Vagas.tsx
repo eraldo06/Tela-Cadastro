@@ -1,24 +1,9 @@
 import './vagas.css'
-import { useState } from "react";
 
-import nota from './api';
-
-
+import nota from '../../api';
 let nota1:any = nota
 
-
-
 const Vagas = () => {
-
-    function log (){
-        nota1.push({
-            vaga:"tesre00",
-        })
-
-        console.log(nota1);
-        
-        
-    }
     return (
         <>
             <div className="container">
@@ -31,7 +16,7 @@ const Vagas = () => {
                                 <p>Localização: {res.localizacao}</p>
                             </div>
                             <div className="inputBox w100">
-                                <input type="submit" value="Ver vaga" onClick={log}/>
+                                <input type="submit" value="Ver vaga"/>
                             </div>
                         </div>
                     )
