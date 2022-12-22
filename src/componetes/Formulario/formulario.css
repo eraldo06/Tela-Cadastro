@@ -1,0 +1,76 @@
+.container {
+    background: linear-gradient(rgb(14, 98, 48),rgb(81, 165, 119));
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactForm{
+    background-color: #fff;
+    max-width: 1100px;
+    min-height: 520px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  
+  .container .contactForm h2{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: #0f3959;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .formBox{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .contactForm .formBox .inputBox{
+    margin: 2%;
+  }
+  .container .contactForm .formBox .inputBox input{
+    width: 430px;
+    resize: none;
+    padding: 5px, 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+   }
+   .container .contactForm .formBox .inputBox span{
+    display: flex;
+    left: 0;
+    margin-top: -25px;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+   }
+   .container .contactForm .formBox .inputBox select{
+    width: 430px;
+    border: 1px solid #777;
+    padding: 6px;
+    border-radius: 10px;
+   }
+   .container .contactForm .formBox .inputBox input:focus ~ span,
+   .container .contactForm .formBox .inputBox input:valid ~ span{
+    transform: translateY(-25px);
+    font-size: 12px;
+    font-weight: 400;
+   }
+   .container .contactForm .inputBox input[type="submit"]{
+    cursor: pointer;
+    background-color: #095a55;
+    color: #fff;
+    border: none;
+    width: 200px;
+    padding: 12px;
+    margin-left: 2%;
+    margin-top: 3%;
+    border-radius: 25px;
+    font-size: 17px;
+   }
