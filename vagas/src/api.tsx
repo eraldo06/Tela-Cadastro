@@ -1,65 +1,65 @@
 const api = [
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio1",
         "requisitos":"Cursando",
-        "palavras-chave":"001",
+        "palavrachave":"001",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio2",
         "requisitos":"Cursando",
-        "palavras-chave":"002",
+        "palavrachave":"002",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio3",
         "requisitos":"Cursando",
-        "palavras-chave":"003",
+        "palavrachave":"003",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio4",
         "requisitos":"Cursando",
-        "palavras-chave":"004",
+        "palavrachave":"004",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio5",
         "requisitos":"Cursando",
-        "palavras-chave":"005",
+        "palavrachave":"005",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio6",
         "requisitos":"Cursando",
-        "palavras-chave":"006",
+        "palavrachave":"006",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio7",
         "requisitos":"Cursando",
-        "palavras-chave":"007",
+        "palavrachave":"007",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio8",
         "requisitos":"Cursando",
-        "palavras-chave":"008",
+        "palavrachave":"008",
         "localizacao":"PE-Recife"
     },
     {
         "empresa":"facebook",
-        "vaga":"estagio",
+        "vaga":"estagio9",
         "requisitos":"Cursando",
-        "palavras-chave":"009",
+        "palavrachave":"009",
         "localizacao":"PE-Recife"
     }
 ]

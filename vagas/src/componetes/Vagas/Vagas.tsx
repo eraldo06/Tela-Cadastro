@@ -1,13 +1,13 @@
 import './vagas.css'
+import { Link } from 'react-router-dom';
+import api from '../../api';
 
-import nota from '../../api';
-let nota1:any = nota
 
 const Vagas = () => {
     return (
         <>
             <div className="container">
-                {nota1.map((res:any) => {
+                {api.map((res:any) => {
                     return (
                         <div className="contactForm">
                             <h2>{res.vaga}</h2>
@@ -16,9 +16,10 @@ const Vagas = () => {
                                 <p>Localização: {res.localizacao}</p>
                             </div>
                             <div className="inputBox w100">
-                                <input type="submit" value="Ver vaga"/>
+                                <Link to={`/detalhes/${res.palavrachave}`}><input type="submit" value="Ver vaga"/></Link> 
                             </div>
                         </div>
+                        
                     )
                 })}
             </div>

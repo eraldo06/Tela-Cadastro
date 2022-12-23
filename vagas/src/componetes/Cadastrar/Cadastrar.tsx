@@ -1,6 +1,10 @@
 import './cadastrar.css'
 import { useState } from 'react'
+import api from '../../api';
+
+
 function Cadastrar() {
+
 
     const [nomeVaga, setNomeVaga] = useState('')
     const [empresa, setEmpresa] = useState('')
@@ -9,18 +13,23 @@ function Cadastrar() {
     const [palavraChave, setPalavraChave] = useState('')
 
     // isso é para mostrar que está salvando
-    let lista:any = []
-    const [items, setItems] = useState(lista)
+    const [items, setItems] = useState(api)
 
     function salvar(){
-        items.push({
-            nomeVaga:nomeVaga,
-            empresa:empresa,
-            localizacao:localizacao,
-            requisitos:requisitos,
-            palavraChave:palavraChave
-        })
-        console.log(items);
+        if(items.find((e:any)=> { e.palavrachave === palavraChave})){
+            return console.log('erro');
+        }else{
+            items.push({
+                empresa:empresa,
+                vaga:nomeVaga,
+                requisitos:requisitos,
+                palavrachave:palavraChave,
+                localizacao:localizacao,
+            })
+            console.log(api.map((e:any)=>{e.palavrachave+'twsetw'}));
+        }
+       
+
     }
 
     return (
