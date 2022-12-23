@@ -1,39 +1,44 @@
 import './cadastrar.css'
 import { useState } from 'react'
 import api from '../../api';
-
+import Header from '../Header/Header';
 
 function Cadastrar() {
-
 
     const [nomeVaga, setNomeVaga] = useState('')
     const [empresa, setEmpresa] = useState('')
     const [localizacao, setLocalizacao] = useState('')
     const [requisitos, setRequisitos] = useState('')
     const [palavraChave, setPalavraChave] = useState('')
+    const [status, setStatus] = useState(Boolean)
 
     // isso é para mostrar que está salvando
-    const [items, setItems] = useState(api)
+    const [vagas, setVagas] = useState(api)
+   
 
     function salvar(){
-        if(items.find((e:any)=> { e.palavrachave === palavraChave})){
-            return console.log('erro');
+        if(vagas.find((res: any) => res.palavrachave == palavraChave)){
+            console.log('você não pode salvar');
+            return setStatus(false)
         }else{
-            items.push({
+            console.log("você pode salvar");
+            vagas.push({
                 empresa:empresa,
                 vaga:nomeVaga,
                 requisitos:requisitos,
                 palavrachave:palavraChave,
                 localizacao:localizacao,
             })
-            console.log(api.map((e:any)=>{e.palavrachave+'twsetw'}));
+            return setStatus(true)
         }
-       
 
+           
+           
     }
 
     return (
         <>
+        
             <div className="container1">
                 <div className="contactForm1">
                     <h2>Cadastre uma Vaga</h2>
@@ -60,11 +65,13 @@ function Cadastrar() {
                         </div>
                     </div>
                     <div className="inputBox1" >
-                        <input type="submit" value="Cadastrar" onClick={salvar} />
+                        <input type="submit" value="Cadastrar" onClick={salvar}/>
                     </div>
-
                 </div>
             </div>
+        
+             
+            
         </>
     )
 }

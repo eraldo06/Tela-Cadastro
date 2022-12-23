@@ -1,3 +1,4 @@
+
 .container1 {
     background: linear-gradient(rgb(14, 98, 48),rgb(255, 255, 255));
     height: 90vh;
@@ -14,8 +15,6 @@
     margin-left: 10%;
     margin-right: 10%;
   }
-  
-  
   .container1 .contactForm1 h2{
     margin-left: 1%;
     margin-top: 1%;
@@ -50,12 +49,6 @@
     font-weight: 300;
     transition: 0.3s;
    }
-   .container1 .contactForm1 .formBox1 .inputBox1 select{
-    width: 430px;
-    border: 1px solid #777;
-    padding: 6px;
-    border-radius: 10px;
-   }
    .container1 .contactForm1 .formBox1 .inputBox1 input:focus ~ span,
    .container1 .contactForm1 .formBox1 .inputBox1 input:valid ~ span{
     transform: translateY(-25px);
@@ -73,4 +66,77 @@
     margin-top: 3%;
     border-radius: 25px;
     font-size: 17px;
+   }
+
+
+   @media (max-width:1219px){
+    .container1 .contactForm1 .formBox1 .inputBox1 input{
+      width: 350px;
+    }
+    .container1 .contactForm1 .formBox1 .inputBox1{
+      margin-bottom: 40px;
+     }
+   }
+
+
+   @media (max-width:1000px){
+    .container1 .contactForm1 .formBox1 .inputBox1 input{
+      width: 300px;
+    }
+   }
+
+
+   @media (max-width:865px){
+    .container1 .contactForm1 .formBox1 .inputBox1 input{
+      width: 250px;
+    }
+    .container1 .contactForm1 .formBox1 .inputBox1 input:focus ~ span,
+   .container1 .contactForm1 .formBox1 .inputBox1 input:valid ~ span{
+    transform: translateY(-18px);
+    font-size: 10px;
+    font-weight: 400;
+   }
+   .container1 .contactForm1 .formBox1 .inputBox1{
+    margin-bottom: 40px;
+   }
+   }
+
+
+   @media (max-width:729px){
+    .container1 .contactForm1 .formBox1 .inputBox1 input{
+      width: 200px;
+    }
+   }
+
+
+   @media (max-width:593px){
+    .container1 .contactForm1 {
+      width: 80%;
+    }
+    .container1 .contactForm1 .formBox1 .inputBox1 input{
+      width: 350px;
+    }
+    .container1 .contactForm1 h2{
+      font-size: 25px;
+    }
+    .container1 .contactForm1 .formBox1 .inputBox1 span{
+      font-size: 15px;
+    }
+    .container1 .contactForm1 .inputBox1 input[type="submit"]{
+      font-size: 15px;
+      width: 150px;
+    }
+   }
+   @media (max-width:431px){
+    .container1 .contactForm1 .formBox1 .inputBox1 input{
+      width: 250px;
+    }
+   }
+   @media (max-width:382px){
+    .container1 .contactForm1 .formBox1 .inputBox1 input{
+      width: 220px;
+    }
+    .container1 .contactForm1 h2{
+      font-size: 20px;
+    }
    }
