@@ -1,12 +1,12 @@
 import {Routes as WrapperRoutes, Route, BrowserRouter} from "react-router-dom";
-import PagCurriculo from "../paginas/PagCurriculo";
 import PagCadastrar from "../paginas/PagCadastrar";
+import PagClientes from "../paginas/PagClientes";
 export default function Routes(){
     return(
     <BrowserRouter>
     <WrapperRoutes>
-        <Route path="/" element={<PagCadastrar/>} />
-        <Route path="/cliente" element={<PagCurriculo/>} />
+        <Route path="/" element={<PagClientes/>} />
+        <Route path="/cadastrar" element={<PagCadastrar/>} />
     </WrapperRoutes>
     </BrowserRouter>
     )
