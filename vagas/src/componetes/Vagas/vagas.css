@@ -44,3 +44,29 @@
   border-radius: 25px;
   font-size: 17px;
  }
+
+ @media (max-width:912px){
+  .contactForm{
+    width: 35%;
+  }
+ }
+ @media (max-width:590px){
+  .container .contactForm .formBox p{
+    font-size: 15px;
+    font-weight: 400;
+   }
+   .container .contactForm h2{
+    font-size: 25px;
+   }
+   .contactForm .inputBox input{
+    font-size: 17px;
+    padding: 7px 10px;
+    width: 150px;
+   }
+}
+@media (max-width:460px){
+  .contactForm{
+    width: 80%;
+    margin-bottom: 5%;
+  }
+}

@@ -12,8 +12,9 @@ const Vagas = () => {
                         <div className="contactForm">
                             <h2>{res.vaga}</h2>
                             <div className="formBox">
-                                <p>Empresa: {res.empresa}</p>
-                                <p>Localização: {res.localizacao}</p>
+                                
+                                <p><strong>Empresa: </strong>{res.empresa}</p>
+                                <p><strong>Localização:</strong> {res.localizacao}</p>
                             </div>
                             <div className="inputBox w100">
                                 <Link to={`/detalhes/${res.palavrachave}`}><input type="submit" value="Ver vaga"/></Link> 

@@ -1,0 +1,47 @@
+.container2 { 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    height: 85vh;
+  }
+  
+  .contactForm2{
+    width: 380px;
+    max-height: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 2%;
+  }
+  
+  
+  .container2 .contactForm2 h2{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: #0f3959;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+   .container2 .contactForm2 .formBox2 p{
+    font-size: 18px;
+    font-weight: 300;
+   }
+  
+   
+   .contactForm2 .inputBox2 input{
+    cursor: pointer;
+    background-color: #095a55;
+    color: #fff;
+    border: none;
+    width: 200px;
+    padding: 12px;
+    margin-left: 2%;
+    margin-top: 3%;
+    border-radius: 25px;
+    font-size: 17px;
+   }
