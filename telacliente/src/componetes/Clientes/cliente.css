@@ -1,0 +1,82 @@
+.h1{
+  color: #fff;
+  margin: 1% 3%;
+  font-size: 50px;
+  font-weight: 500;
+}
+.container { 
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.cliente{
+  width: 100%;
+  max-height: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 10px 2%;
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+}
+
+
+.container .cliente h2{
+  color: #0f3959;
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+ .container .cliente  p{
+  font-size: 18px;
+  font-weight: 300;
+ }
+
+ 
+ .cliente .input input{
+  cursor: pointer;
+  background-color: #095a55;
+  color: #fff;
+  border: none;
+  padding: 12px 50px;
+  border-radius: 25px;
+  font-size: 17px;
+ }
+ @media (max-width:917px){
+  .cliente{
+    width: 55%;
+    flex-direction: column; 
+  }
+  .container .cliente  p{
+    margin-bottom: 1%;
+  }
+ }
+ @media (max-width:530px){
+  .h1{
+    font-size: 40px;
+  }
+  .container .cliente h2{
+    font-size: 27px;
+  }
+ }
+ @media (max-width:420px){
+  .h1{
+    font-size: 30px;
+  }
+  .container .cliente h2{
+    font-size: 20px;
+  }
+  .cliente .input input{
+    font-size: 15px;
+    padding: 10px 45px;
+  }
+  .container .cliente  p{
+    margin-bottom: 2%;
+    font-size: 14px;
+  }
+ }
+ 

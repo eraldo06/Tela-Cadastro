@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 15vh;
+    background-color: rgb(14, 98, 48);
+    font-weight: 600;
+  }
+
+  header a {
+    padding: 13px 50px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(14, 98, 48);
+    margin: 5px;
+  }
+  @media (max-width:477px){
+    header{
+      height: 150px;
+      padding-top: 10px;
+    }
+    header a {
+      padding: 10px 45px;
+    }
+   
+  }
